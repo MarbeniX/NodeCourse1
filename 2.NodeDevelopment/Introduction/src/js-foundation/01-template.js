@@ -1,4 +1,4 @@
-const message = "Hello World";
+const message = "Hello World 2";
 
 module.exports = {
     message,
