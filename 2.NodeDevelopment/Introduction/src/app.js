@@ -11,4 +11,17 @@
 // getUserById(3, printMessage);
 
 // FOURTH
-const { personBuilder } = require("./js-foundation/04-factoryfunctions");
+// const { getUUID, getAge } = require("./plugins");
+// const { makePersonBuidler } = require("./js-foundation/04-factoryfunctions");
+
+// const personBuilder = makePersonBuidler(getUUID, getAge);
+// const obj = { name: "John", birthdate: "1990-01-01" };
+// const obj2 = { name: "Mary", birthdate: "1985-05-15" };
+// const jhon = personBuilder(obj);
+// const mary = personBuilder(obj2);
+// console.table({ jhon, mary });
+
+// FIFTH
+const { getPokemon } = require("./js-foundation/06-promises");
+getPokemon(1).then((name) => console.log(name)); // Bulbasaur
+// getPokemon(1, (name) => console.log(name)); // Bulbasaur
