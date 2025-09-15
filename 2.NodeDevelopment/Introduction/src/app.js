@@ -22,6 +22,12 @@
 // console.table({ jhon, mary });
 
 // FIFTH
-const { getPokemon } = require("./js-foundation/05-promises");
-getPokemon(1).then((name) => console.log(name)); // Bulbasaur
-// getPokemon(1, (name) => console.log(name)); // Bulbasaur
+// const { getPokemon } = require("./js-foundation/05-promises");
+// getPokemon(1).then((name) => console.log(name)); // Bulbasaur
+// // getPokemon(1, (name) => console.log(name)); // Bulbasaur
+
+// SIXTH
+const { buildLogger } = require("./plugins");
+
+const logger = buildLogger("app.js");
+logger.log("hello adacito");
