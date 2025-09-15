@@ -31,3 +31,4 @@ const { buildLogger } = require("./plugins");
 
 const logger = buildLogger("app.js");
 logger.log("hello adacito");
+logger.error("this is an error message");
