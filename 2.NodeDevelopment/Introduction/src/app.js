@@ -22,6 +22,6 @@
 // console.table({ jhon, mary });
 
 // FIFTH
-const { getPokemon } = require("./js-foundation/06-promises");
+const { getPokemon } = require("./js-foundation/05-promises");
 getPokemon(1).then((name) => console.log(name)); // Bulbasaur
 // getPokemon(1, (name) => console.log(name)); // Bulbasaur
