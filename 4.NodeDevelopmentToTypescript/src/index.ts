@@ -1,8 +1,3 @@
-import { buildLogger } from "./plugins";
-const logger = buildLogger("client");
-logger.log("This is an info message");
-logger.error("This is an error message");
-
 //First
 // import { message } from "./js-foundation/01-template";
 // console.log(message);
@@ -32,3 +27,8 @@ logger.error("This is an error message");
 // import { getUUID } from "./plugins/getUUID.plugin";
 // const uuid = getUUID();
 // console.log(uuid);
+
+import { buildLogger } from "./plugins";
+const logger = buildLogger("client");
+logger.log("This is an info message");
+logger.error("This is an error message");
