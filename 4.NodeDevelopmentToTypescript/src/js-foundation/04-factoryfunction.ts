@@ -6,7 +6,7 @@ interface Person {
 interface PersonBuilder {
     id: string;
     name: string;
-    birthdate: Date;
+    birthdate: string;
     age: number;
 }
 
@@ -16,13 +16,13 @@ export const makePersonBuidler = (
 ) => {
     return (personBuilder: {
         name: string;
-        birthdate: Date;
+        birthdate: string;
     }): PersonBuilder => {
         return {
             id: getUUID(),
             name: personBuilder.name,
             birthdate: personBuilder.birthdate,
-            age: getAge(personBuilder.birthdate),
+            age: getAge(new Date(personBuilder.birthdate)),
         };
     };
 };
